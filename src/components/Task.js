@@ -111,7 +111,7 @@ class Task extends Component {
 
   handleDelete=(event,task)=>{
     event.preventDefault()
-    axios.delete(`https://taskapidrt.herokuapp.com/apitask//${task.id}/`)
+    axios.delete(`https://taskapidrt.herokuapp.com/apitask/${task.id}/`)
     .then(()=>this.getdata())
   }
 
